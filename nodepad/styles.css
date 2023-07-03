@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+    background-color: #e0e0e0;
+}
+
+.box{
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 30px;
+    color: #e0e0e0;
+    text-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+
+}
+
+input{
+    margin: 30px 20px 30px 20px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5) inset, -3px -3px 5px rgba(255, 255, 255, 0.5) inset;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #727272;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+button:hover{
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5) inset, -3px -3px 5px rgba(255, 255, 255, 0.5) inset;
+    cursor: pointer;
+}
+
+.messagBox{
+    position: relative;
+    color: #727272;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5) inset, -3px -3px 5px rgba(255, 255, 255, 0.5) inset;
+    display: inline-flex;
+}
+.delet{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+.trash{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;   
+}
+.m{
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    width: 30px;
+    height: 30px; 
+}
+.container{
+    width: 90%;
+    margin: auto;
+    float: left;
+}
+.fertig{
+    text-decoration:line-through;
+}
+.icon{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.fail{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.fail-box{
+    color: #727272;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+
+.trashBox{
+    width: 80%;
+    height: 550px;
+    background-color: #e0e0e0;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    
+}
+.trashBox-close{
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.trashmessag{
+    width: 80%;
+    height: 40%;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5) inset, -3px -3px 5px rgba(255, 255, 255, 0.5) inset;
+}
+.trashBtn{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+h2{
+    position: absolute;
+    top: 10px;
+}
+.trash-icon{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.trash-icon:hover{
+    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5) inset, -3px -3px 5px rgba(255, 255, 255, 0.5) inset;
+}
+sup{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 3px rgba(90, 90, 90, 0.5) inset, -2px -2px 3px rgba(255, 255, 255, 0.5) inset;
+}
+.trash-png{
+    width: 30px;
+    height: 30px;
+}
+.none{
+    display: none;
+}
